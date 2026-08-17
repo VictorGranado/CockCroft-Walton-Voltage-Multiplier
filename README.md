@@ -69,7 +69,7 @@ One ladder generates **+HV**, while the mirrored ladder generates **-HV**.
 
 ### Circuit Diagram
 
-![Alt text]([20251119_133702.jpg](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/a1b454374f41c5c5932929934f996671486ddd0c/Screenshot%202026-08-16%20181642.png))
+![Alt text](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/bba988de6492d9c8374b10e4d0502db46ab13647/Screenshot%202026-08-16%20181642.png)
 
 ---
 
