@@ -163,12 +163,7 @@ The ideal equation assumes perfect components and zero load.
 Actual output is closer to:
 
 ```text
-Vreal ≈ Videal
-        - voltage sag
-        - source losses
-        - corona losses
-        - leakage
-        - parasitic losses
+Vreal ≈ Videal - voltage sag - source losses - corona losses - leakage - parasitic losses
 ```
 
 Cockcroft-Walton voltage sag increases strongly with stage count and approximately follows:
