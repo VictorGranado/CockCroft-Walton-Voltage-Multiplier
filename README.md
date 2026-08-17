@@ -72,6 +72,19 @@ One ladder generates **+HV**, while the mirrored ladder generates **-HV**.
 ![Alt text](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/bba988de6492d9c8374b10e4d0502db46ab13647/Screenshot%202026-08-16%20181642.png)
 
 ---
+### Components List
+| Component | Specification | Quantity |
+|---|---|---:|
+| DC Power Supply | 12 V DC, 1–3 A | 1 |
+| DC to HV AC Inverter/Transformer | 12 V input, 12–20 kV AC output, ~20 kHz | 1 |
+| High-Voltage Capacitors | 1000 pF (1 nF), ≥20 kV rated | 72 |
+| High-Voltage Diodes | 2CL77 or equivalent, ≥20 kV, ~5 mA | 72 |
+| Positive HV Output Terminal | High-voltage insulated | 1 |
+| Negative HV Output Terminal | High-voltage insulated | 1 |
+| High-Voltage Wire | HV-rated silicone/PTFE wire | As needed |
+| Insulating Enclosure | Acrylic, HDPE, or equivalent | 1 |
+| Dielectric Oil | HV transformer/mineral oil | As needed |
+---
 
 ## Theoretical Output Calculations
 
