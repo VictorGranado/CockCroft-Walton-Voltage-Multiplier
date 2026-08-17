@@ -367,5 +367,4 @@ More circuit diagrams, experimental results, insulation improvements, and discha
 
 **Part 4 coming soon.**
 
-```
-```
+
