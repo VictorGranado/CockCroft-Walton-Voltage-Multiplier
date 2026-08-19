@@ -1,6 +1,6 @@
 # Differential Cockcroft-Walton High-Voltage Multiplier
 
-An experimental high-voltage project exploring **Cockcroft-Walton voltage multiplication, differential output configurations, corona discharge, plasma behavior, electric-field geometry, and high-voltage insulation**.
+**An experimental high-voltage project exploring Cockcroft-Walton voltage multiplication, differential output configurations, corona discharge, plasma behavior, electric-field geometry, and high-voltage insulation**.
 
 > **Status:** Experimental / In Development  
 > **Current Configuration:** 36 total stages — **18 positive + 18 negative**
