@@ -7,6 +7,16 @@ An experimental high-voltage project exploring **Cockcroft-Walton voltage multip
 
 ---
 
+## How the Cockcroft-Walton Multiplier Works
+
+A Cockcroft-Walton voltage multiplier uses a ladder of diodes and capacitors to convert a high-voltage AC input into a much higher DC output.
+
+During each half-cycle of the AC waveform, different capacitors charge through the diodes. These capacitor voltages are then effectively stacked in series, increasing the total output voltage stage by stage.
+
+For an ideal multiplier:
+
+Vout ≈ 2 × n × Vin
+
 ## Overview
 
 This project began as a traditional **36-stage continuous Cockcroft-Walton multiplier** and was later redesigned into a **differential 18 + 18 stage configuration**.
