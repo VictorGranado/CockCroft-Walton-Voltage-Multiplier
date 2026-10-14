@@ -9,9 +9,9 @@ A completed experimental high-voltage demonstrator exploring **Cockcroft-Walton 
 > **Estimated Vout from Air Breakdown:** ~750 kV
 
 ---
-![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_2.jpg)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_2.jpg" alt="Differential Cockcroft-Walton" width="400">
 
-![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/69f68067fcee4427c482f0fb48b813cbb6273c1f/arc_3.png)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/69f68067fcee4427c482f0fb48b813cbb6273c1f/arc_3.png" alt="Arc" width="400">
 
 ## Overview
 
@@ -51,7 +51,7 @@ The useful output voltage is:
 ```text
 Vdiff = V+ - V-
 ```
-![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_1.jpg)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_1.jpg" alt="Differential Cockcroft-Walton" width="400">
 ---
 
 ## How the Cockcroft-Walton Multiplier Works
@@ -107,7 +107,7 @@ One ladder pumps charge toward **+HV**, while the mirrored ladder pumps charge t
 
 ### Circuit Diagram
 
-![Differential Cockcroft-Walton Circuit](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/bba988de6492d9c8374b10e4d0502db46ab13647/Screenshot%202026-08-16%20181642.png)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/bba988de6492d9c8374b10e4d0502db46ab13647/Screenshot%202026-08-16%20181642.png" alt="Differential Cockcroft-Walton Circuit" width="550">
 
 ---
 
@@ -311,9 +311,9 @@ Final Supply:
 
 19 V × 3 A ≈ 57 W
 ```
-![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_1.jpg)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_1.jpg" alt="Arc" width="400">
 
-![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_2.jpg)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_2.jpg" alt="Arc" width="400">
 
 The multiplier does not necessarily consume the full 57 W, but the larger power supply gives the transformer and multiplier significantly more available power during streamer and arc formation.
 
@@ -441,7 +441,7 @@ The completed project consists of two enclosed multiplier modules representing t
 Each multiplier is housed inside a cylindrical PVC enclosure for mechanical protection and organization.
 
 A custom **3D-printed tower support** was designed and manufactured to hold both multiplier modules together.
-![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_3.jpg)
+<img src="https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_3.jpg" alt="Differential Cockcroft-Walton" width="400">
 The support provides:
 
 - Improved organization
