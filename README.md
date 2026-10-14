@@ -9,6 +9,7 @@ A completed experimental high-voltage demonstrator exploring **Cockcroft-Walton 
 > **Estimated Vout from Air Breakdown:** ~750 kV
 
 ---
+![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_2.jpg)
 
 ## Overview
 
@@ -48,7 +49,7 @@ The useful output voltage is:
 ```text
 Vdiff = V+ - V-
 ```
-
+![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_1.jpg)
 ---
 
 ## How the Cockcroft-Walton Multiplier Works
@@ -435,7 +436,7 @@ The completed project consists of two enclosed multiplier modules representing t
 Each multiplier is housed inside a cylindrical PVC enclosure for mechanical protection and organization.
 
 A custom **3D-printed tower support** was designed and manufactured to hold both multiplier modules together.
-
+![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_3.jpg)
 The support provides:
 
 - Improved organization
