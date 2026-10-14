@@ -11,6 +11,8 @@ A completed experimental high-voltage demonstrator exploring **Cockcroft-Walton 
 ---
 ![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_2.jpg)
 
+![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_3.jpg)
+
 ## Overview
 
 This project began as a traditional **36-stage continuous Cockcroft-Walton multiplier** and was later redesigned into a **differential 18 + 18 stage configuration**.
@@ -309,6 +311,9 @@ Final Supply:
 
 19 V × 3 A ≈ 57 W
 ```
+![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_1.jpg)
+
+![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_2.jpg)
 
 The multiplier does not necessarily consume the full 57 W, but the larger power supply gives the transformer and multiplier significantly more available power during streamer and arc formation.
 
