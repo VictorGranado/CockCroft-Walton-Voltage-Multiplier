@@ -11,7 +11,7 @@ A completed experimental high-voltage demonstrator exploring **Cockcroft-Walton 
 ---
 ![Differential Cockcroft-Walton](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/4058a9b3048b7875c07844f9e2f0f6bc7336b2ce/voltage_multiplier_2.jpg)
 
-![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/ef733b4e172392f06141397d00dc17d8bb36af60/arc_3.jpg)
+![Arc](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/69f68067fcee4427c482f0fb48b813cbb6273c1f/arc_3.png)
 
 ## Overview
 
