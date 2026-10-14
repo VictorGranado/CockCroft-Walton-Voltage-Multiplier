@@ -5,8 +5,8 @@ A completed experimental high-voltage demonstrator exploring **Cockcroft-Walton 
 > **Status:** Completed — v1.0  
 > **Configuration:** 36 total stages — **18 positive + 18 negative**  
 > **Observed Arc Length:** ~25 cm  
-> **Current DC Supply:** 19 V, 3 A
-> **Max Vout (Air breakdown approximation):** 750,000 V
+> **Current DC Supply:** 19 V, 3 A  
+> **Estimated Vout from Air Breakdown:** ~750 kV
 
 ---
 
@@ -16,23 +16,23 @@ This project began as a traditional **36-stage continuous Cockcroft-Walton multi
 
 ### Original Configuration
 
-
+```text
 AC Source → 36-Stage CW Ladder → +HV
-
+```
 
 ### Final Differential Configuration
 
-
+```text
                  ┌→ 18-Stage Positive Ladder → +HV
 HV AC Source ────┤
                  └→ 18-Stage Negative Ladder → -HV
-
+```
 
 The two ladders are mirrored with opposite diode orientations.
 
 Instead of placing the full voltage on one high-voltage rail, the final design generates approximately equal positive and negative potentials.
 
-
+```text
        +HV
         │
         │
@@ -41,13 +41,13 @@ Instead of placing the full voltage on one high-voltage rail, the final design g
         │
         │
        -HV
-
+```
 
 The useful output voltage is:
 
-
+```text
 Vdiff = V+ - V-
-
+```
 
 ---
 
@@ -59,26 +59,26 @@ During alternating half-cycles of the AC waveform, different capacitors charge t
 
 For an ideal ladder:
 
-
+```text
 Vout ≈ 2 × n × Vin
+```
 
-
-where:
+Where:
 
 - `n` = number of stages
 - `Vin` = peak AC input voltage
 
 For the final differential configuration:
 
-
+```text
 V+ ≈ +(2)(18)(Vin)
 
 V- ≈ -(2)(18)(Vin)
 
 Vdiff ≈ 72Vin
+```
 
-
-
+---
 
 ## Why Differential?
 
@@ -94,19 +94,19 @@ Splitting the original 36-stage ladder into two mirrored 18-stage ladders provid
 
 The differential configuration performed noticeably better during experimental testing.
 
-
+---
 
 ## Circuit Design
 
 Both 18-stage ladders are driven from the same high-frequency AC source.
 
-One ladder pumps charge toward **+HV**, while the mirrored ladder pumps charge toward **-HV**.
+One ladder pumps charge toward **+HV**, while the mirrored ladder pumps charge toward **−HV**.
 
 ### Circuit Diagram
 
 ![Differential Cockcroft-Walton Circuit](https://github.com/VictorGranado/CockCroft-Walton-Voltage-Multiplier/blob/bba988de6492d9c8374b10e4d0502db46ab13647/Screenshot%202026-08-16%20181642.png)
 
-
+---
 
 ## Components
 
@@ -129,37 +129,37 @@ One ladder pumps charge toward **+HV**, while the mirrored ladder pumps charge t
 
 For a standard Cockcroft-Walton multiplier:
 
-
+```text
 Vout = (2)(n)(Vin)
-
+```
 
 For the original 36-stage continuous ladder:
 
-
+```text
 Vout = (2)(36)(Vin)
      = 72Vin
-
+```
 
 For the differential 18 + 18 configuration:
 
-
+```text
 V+ = +(2)(18)(Vin)
 
 V- = -(2)(18)(Vin)
 
 Vdiff = (2)(18)(Vin) + (2)(18)(Vin)
       = 72Vin
-
+```
 
 Therefore, both configurations have approximately the **same ideal total voltage**, but the differential design divides that voltage between positive and negative rails.
 
 ### Estimated Ideal Output
 
-| Scenario | AC Input | +HV | -HV | Ideal Differential Output |
+| Scenario | AC Input | +HV | −HV | Ideal Differential Output |
 |---|---:|---:|---:|---:|
-| **Best Case** | 20 kV | +720 kV | -720 kV | **1.44 MV** |
-| **Conservative** | 12 kV | +432 kV | -432 kV | **864 kV** |
-| **Low Estimate** | 5 kV | +180 kV | -180 kV | **360 kV** |
+| **Best Case** | 20 kV | +720 kV | −720 kV | **1.44 MV** |
+| **Conservative** | 12 kV | +432 kV | −432 kV | **864 kV** |
+| **Low Estimate** | 5 kV | +180 kV | −180 kV | **360 kV** |
 
 > These are theoretical no-load calculations and are **not measured output voltages**.
 
@@ -169,19 +169,19 @@ Therefore, both configurations have approximately the **same ideal total voltage
 
 A commonly used approximation for the dielectric strength of air is:
 
-
+```text
 ~3 kV/mm
 ~30 kV/cm
 ~3 MV/m
-
+```
 
 Using:
 
-
+```text
 Distance ≈ Voltage / 3 kV/mm
+```
 
-
-gives the following idealized uniform-field values:
+Gives the following idealized uniform-field values:
 
 | Scenario | Ideal Voltage | Approx. Uniform-Air Breakdown |
 |---|---:|---:|
@@ -209,9 +209,9 @@ Actual breakdown distance depends strongly on:
 
 Individual Cockcroft-Walton stages can experience voltages on the order of approximately:
 
-
+```text
 Vstage ≈ 2Vin
-
+```
 
 | AC Input | Approx. Stage Voltage |
 |---:|---:|
@@ -237,22 +237,22 @@ The ideal voltage equation assumes:
 
 Real output is better represented as:
 
-
+```text
 Vreal ≈ Videal
         - voltage sag
         - source losses
         - corona losses
         - leakage
         - parasitic losses
-
+```
 
 Cockcroft-Walton voltage sag increases strongly with stage count and can be approximated as:
 
-
+```text
 Vsag ∝ (I × n³) / (f × C)
+```
 
-
-where:
+Where:
 
 - `I` = load current
 - `n` = number of stages
@@ -261,20 +261,21 @@ where:
 
 This relationship was one motivation for moving to two shorter 18-stage ladders instead of one long 36-stage ladder.
 
-For comparison:
+### Stage-Count Comparison
 
-
+```text
 Single 36-stage ladder:
 
 36³ = 46,656
+```
 
-
+```text
 Two 18-stage ladders:
 
 2 × 18³ = 11,664
 ```
 
-
+```text
 11,664 / 46,656 ≈ 0.25
 ```
 
@@ -290,18 +291,19 @@ At very high voltages, however, other effects such as **corona, leakage, parasit
 
 After replacing the original **9 V, 1 A supply** with a **19 V, 3 A supply**, the system produced sustained arcs approaching approximately:
 
-
+```text
 25 cm
 ```
 
 The available source power increased substantially:
 
-
+```text
 Original Supply:
 
 9 V × 1 A ≈ 9 W
+```
 
-
+```text
 Final Supply:
 
 19 V × 3 A ≈ 57 W
@@ -311,7 +313,7 @@ The multiplier does not necessarily consume the full 57 W, but the larger power 
 
 This allows the circuit to maintain its voltage more effectively once a discharge begins.
 
-> Arc length is not used as a direct voltage measurement. Breakdown distance depends on electrode geometry, humidity, streamer propagation, available current, polarity, and stored energy.
+> **Note:** Arc length is not used as a direct voltage measurement. Breakdown distance depends on electrode geometry, humidity, streamer propagation, available current, polarity, and stored energy.
 
 ---
 
@@ -327,7 +329,7 @@ Small changes in:
 - Nearby conductive objects
 - Surface geometry
 
-produced significant changes in discharge behavior.
+Produced significant changes in discharge behavior.
 
 This demonstrated the importance of **local electric-field concentration and electrode geometry** in high-voltage systems.
 
@@ -389,7 +391,7 @@ Electrode geometry strongly influences the type and stability of the discharge.
 
 Sharp points create strong local electric-field concentration.
 
-
+```text
 Sharp Electrode
       ↓
 High Local Electric Field
@@ -412,7 +414,7 @@ However, early corona can also continuously load the multiplier and reduce termi
 
 Smooth or rounded electrodes reduce local field concentration.
 
-
+```text
 Rounded Electrode
        ↓
 Reduced Field Enhancement
@@ -428,7 +430,7 @@ Rounded electrodes can therefore produce cleaner and more repeatable arc behavio
 
 ## Mechanical Design
 
-The completed project consists of two enclosed multiplier modules representing the **+HV and -HV ladders**.
+The completed project consists of two enclosed multiplier modules representing the **+HV and −HV ladders**.
 
 Each multiplier is housed inside a cylindrical PVC enclosure for mechanical protection and organization.
 
@@ -454,15 +456,15 @@ The completed multiplier includes dedicated high-voltage safety labeling.
 Labels identify:
 
 - +HV output
-- -HV output
+- −HV output
 - Stored-charge hazard
 - High-voltage handling instructions
 - Service precautions
 - General high-voltage warnings
 
 > ⚠️ **EXTREME HIGH-VOLTAGE WARNING**
-
-The capacitors and multiplier stages can remain charged after input power is removed.
+>
+> The capacitors and multiplier stages can remain charged after input power is removed.
 
 Potential hazards include:
 
@@ -520,7 +522,7 @@ The completed system serves as a practical demonstration platform for studying:
 
 The project evolved through several major stages:
 
-
+```text
 Initial Cockcroft-Walton Prototype
                 ↓
 36-Stage Continuous Ladder
@@ -579,7 +581,7 @@ The finished system includes:
 - Dual insulated multiplier housings
 - High-frequency HV AC input
 - 19 V, 3 A source
-- Dedicated +HV and -HV outputs
+- Dedicated +HV and −HV outputs
 - High-voltage safety labeling
 - Custom mechanical support
 - Integrated carrying handle
@@ -615,12 +617,12 @@ This repository documents an experimental engineering project and is **not inten
 
 ## Final Version
 
-**Differential Cockcroft-Walton High-Voltage Multiplier v1.0**
+### Differential Cockcroft-Walton High-Voltage Multiplier v1.0
 
-36 total stages.  
-18 positive.  
-18 negative.  
-Differential high-voltage output.  
-Approximately 25 cm demonstrated arc length.
+**36 total stages**  
+**18 positive stages**  
+**18 negative stages**  
+**Differential high-voltage output**  
+**~25 cm demonstrated arc length**
 
-**Project complete.**
+### Project Complete
