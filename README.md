@@ -577,7 +577,7 @@ The project will also be demonstrated as part of an end-of-semester Physics 3 pr
 
 ## Project Status
 
-### ✅ Differential Cockcroft-Walton Voltage Multiplier v1.0 — Complete
+### Differential Cockcroft-Walton Voltage Multiplier v1.0 — Complete
 
 The primary design and construction phase of the project is complete.
 
